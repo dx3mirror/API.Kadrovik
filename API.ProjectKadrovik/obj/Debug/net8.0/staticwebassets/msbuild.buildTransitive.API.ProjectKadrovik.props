@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\API.ProjectKadrovik.props" />
+</Project>

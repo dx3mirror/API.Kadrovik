@@ -1,0 +1,249 @@
+﻿@{
+    ViewData["Title"] = "Material Design Form";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/styleAutorization.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div id="loading-overlay">
+        <div id="loading-spinner"></div>
+    </div>
+    <hgroup>
+        <h1 id="kadrovik">Kadrovik</h1>
+    </hgroup>
+    <div id="particles-js"></div>
+    @using (Html.BeginForm("OnLogginAsync", "api", FormMethod.Post))
+    {
+        <div class="login-form">
+            <div class="header">
+                <h1 class="signup-text">Sign Up</h1>
+                <h3 class="keysi-text">Enter login and password</h3>
+            </div>
+
+            <div class="group">
+                <input type="text" id="username" name="username" placeholder="Введите логин" oninput="checkInput(this)">
+                <span class="highlight"></span><span class="bar"></span>
+            </div>
+
+            <div class="group">
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                <span class="highlight"></span><span class="bar"></span>
+            </div>
+            <button type="submit" class="button buttonBlue">
+                Войти
+                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+            </button>
+        </div>
+    }
+    
+</body>
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="/css/styleAutorization.css">
+    <div id="error-message" style="color: red; text-align: center;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function submitForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        $.ajax({
+            type: "POST",
+            url: "/Authorization/Login",
+            data: { username: username, password: password },
+            success: function (data) {
+                if (data.success) {
+                    window.location.href = "/Sotrudnik/Index";
+                } else {
+                    document.getElementById("error-message").innerHTML = data.errorMessage;
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX request failed:", status, error);
+                document.getElementById("error-message").innerHTML = "Произошла ошибка при отправке запроса";
+            }
+        });
+
+        return false;
+    }
+</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var loginForm = document.querySelector('.login-form');
+            loginForm.classList.add('show');
+        });
+    </script>
+    <script>
+        // JavaScript код для инициализации спиннера
+        var spinner = new Spinner().spin(document.getElementById('loading-spinner'));
+        setTimeout(function () {
+            document.getElementById('loading-overlay').style.display = 'none';
+            spinner.stop();
+        }, 1500); // Задержка в 1.5 секунды (вы можете настроить это значение)
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fadeInText = document.querySelectorAll('.fade-in-text h1, .fade-in-text h3');
+
+            function revealText() {
+                fadeInText.forEach(function (element, index) {
+                    setTimeout(function () {
+                        element.style.opacity = 1;
+                    }, 200 * index);
+                });
+            }
+
+            // Задержка перед появлением текста
+            setTimeout(revealText, 1000); // Задержка перед стартом анимации (1 секунда в данном случае)
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function makeSparkle() {
+                var h1Element = document.getElementById('kadrovik');
+
+                if (h1Element) {
+                    // Изменяем цвет текста к более ярким оттенкам
+                    h1Element.style.color = 'rgba(255, 150, 255, 0.7)'; // Например, использованы фиолетовые оттенки
+
+                    // Увеличиваем продолжительность перехода
+                    h1Element.style.transition = 'color 5s ease-in-out';
+
+                    // Через некоторое время возвращаем исходный цвет и восстанавливаем скорость перехода
+                    setTimeout(function () {
+                        h1Element.style.color = 'purple';
+                        h1Element.style.transition = 'color 5s ease-in-out';
+                    }, 5000); // Ждем 5 секунд перед возвратом
+                }
+            }
+
+            // Вызываем функцию блеска через интервал
+            setInterval(makeSparkle, 10000); // Вызывать каждые 10 секунд
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            particlesJS("particles-js", {
+                particles: {
+                    number: {
+                        value: 200, // Увеличено количество частиц
+                        density: {
+                            enable: true,
+                            value_area: 1000
+                        }
+                    },
+                    color: {
+                        value: "#000000" // Изменен цвет частиц на черный
+                    },
+                    shape: {
+                        type: "circle",
+                        stroke: {
+                            width: 0,
+                            color: "#000000"
+                        },
+                        polygon: {
+                            nb_sides: 5
+                        }
+                    },
+                    opacity: {
+                        value: 1, // Увеличена прозрачность частиц
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 6, // Увеличен размер частиц
+                        random: true,
+                        anim: {
+                            enable: false,
+                            speed: 40,
+                            size_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#000000", // Изменен цвет соединительных линий на черный
+                        opacity: 0.6,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1, // Уменьшена скорость движения частиц
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: "repulse"
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: "push"
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 400,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 400,
+                            size: 40,
+                            duration: 2,
+                            opacity: 8,
+                            speed: 3
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: 0.4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+        });
+    </script>
+    
+
+
+
