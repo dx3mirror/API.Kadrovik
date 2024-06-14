@@ -15,3 +15,4 @@ C:\Users\danil\source\repos\API.ProjectKadrovik\Infrastructure\obj\Debug\net8.0\
 C:\Users\danil\source\repos\API.ProjectKadrovik\Infrastructure\bin\Debug\net8.0\Domain.dll
 C:\Users\danil\source\repos\API.ProjectKadrovik\Infrastructure\bin\Debug\net8.0\Domain.pdb
 C:\Users\danil\source\repos\API.ProjectKadrovik\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CopyComplete
+C:\Users\danil\source\repos\API.ProjectKadrovik\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

@@ -9,3 +9,10 @@ C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\App
 C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\bin\Debug\net8.0\Domain.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\bin\Debug\net8.0\Domain.pdb
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\danil\source\repos\API.ProjectKadrovik\Application\obj\Debug\net8.0\Application.csproj.CopyComplete

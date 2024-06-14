@@ -98,11 +98,20 @@ namespace Domain.Entity
                 set { brak = value; }
             }
 
-            [StringLength(10)]
+            [StringLength(3)] 
             public string? Del
             {
                 get { return del; }
-                set { del = value; }
+                set
+                {
+                    
+                    if (value != null && value.Length > 3)
+                    {
+                        throw new ArgumentException("Длина строки не должна превышать 3 символов.");
+                    }
+
+                    del = value;
+                }
             }
 
             [StringLength(20)]

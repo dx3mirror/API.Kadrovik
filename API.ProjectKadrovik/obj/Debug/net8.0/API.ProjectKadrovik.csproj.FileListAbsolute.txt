@@ -73,3 +73,9 @@ C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\obj\Debug\ne
 C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\obj\Debug\net8.0\API.ProjectKadrovik.csproj.CopyComplete
 C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\Application.dll
 C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\Application.pdb
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\MediatR.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\danil\source\repos\API.ProjectKadrovik\API.ProjectKadrovik\obj\Debug\net8.0\API.ProjectKadrovik.sourcelink.json

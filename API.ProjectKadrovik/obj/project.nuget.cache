@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aOIz2sO4CtFlSJ7aOpZUEFkURKra3HJ4369aQAH6bFv/NxpJVn36PsMFQKwQ1KPn/pKLaNcGMV6dpwqpt22DmA==",
+  "dgSpecHash": "nFZbTgrGUd7l0C1l4VKWHHCvHuL0hi4FGnwyfKLCjZk3U+GyQ3mBfl6UpRfvB456TcMqg+qL0XbBR5HHFGwvQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\danil\\source\\repos\\API.ProjectKadrovik\\API.ProjectKadrovik\\API.ProjectKadrovik.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

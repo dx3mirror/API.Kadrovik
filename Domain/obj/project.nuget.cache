@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xHdlM//H8JmPX7w1JWoBn3V2XsQp+pLu49pU4Dh3YJRD0n4j+30QJXrIZHEnM/02L4T0Ou3PJdib3cilq48J9Q==",
+  "dgSpecHash": "4cm+mM2F03wQ3mw9fko+CM8dYBqrKk0W079nwXzBzBdvzSCC1kQXrX4DjJd+iUNzBkk2C+kJrMJG9FThyvdIYw==",
   "success": true,
   "projectFilePath": "C:\\Users\\danil\\source\\repos\\API.ProjectKadrovik\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\danil\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512"
+  ],
   "logs": []
 }

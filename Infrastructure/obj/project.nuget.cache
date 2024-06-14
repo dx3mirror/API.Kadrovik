@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "G6X80NG5jiWsXag34Kt3MAJBeVJ3BmI6V0xshBg8Wpc2iVsKvi1Y8VrBS3DEpoirDSMcMDlxcXZfgc1O2S8izA==",
+  "dgSpecHash": "zXLDeJxskrpPpqiFRaEI4lCgYQJVEG8ovP4WiK4NTz+RuzlTVWVUuU+/b0LvvZ0oCoWvprl40qNDFOUwFebTkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\danil\\source\\repos\\API.ProjectKadrovik\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
